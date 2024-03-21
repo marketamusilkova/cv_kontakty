@@ -8,3 +8,62 @@ body {
 }
 
 /* ---------------------------------------------------- */
+h1,
+h2 {
+	text-align: center;
+}
+
+.kontakty {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.kontakt {
+	border: 1px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	max-width: 100%;
+	width: 100px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+p {
+	margin: 0 35px 20px 35px;
+	text-align: center;
+}
+
+@media (min-width: 540px) {
+	.kontakty {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.kontakt {
+		width: 49%;
+		flex-direction: row;
+	}
+
+	img {
+		margin: 15px 0 15px 15px;
+	}
+}
+
+@media (min-width: 960px) {
+	.kontakty {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.kontakt {
+		flex-direction: column;
+	}
+	img {
+		margin: 20px 0 0 0;
+	}
+}
